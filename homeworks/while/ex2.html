@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 2
+      // Create a function called factorial
+      // that takes a single parameter n,
+      // and return the product of all integers up to n starting from 1
+      // Ex: factorial(2); => 2 * 1 => 2
+      // Ex: factorial(4); => 4 * 3 * 2 * 1 => 24
+      // */
+      //       factorial(3);
+
+      // function factorial(result) {
+      //   let n = result;
+      //   while (n >= 1) {
+      //     console.log(n * (n - 1));
+      //     n--;
+      //   }
+      // }
+
+      factorial(4);
+
+      function factorial(n) {
+        let result = n;
+        while (n >= 1) {
+          n--;
+          result *= n;
+          console.log(result);
+        }
+      }
+    </script>
+  </body>
+</html>

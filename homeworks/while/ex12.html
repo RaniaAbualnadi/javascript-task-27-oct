@@ -1,0 +1,49 @@
+<!-- var temp = "This is a string.";
+var count = (temp.match(/is/g) || []).length;
+console.log(count); -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--12- Write a function called repeatChar
+that takes two parameters
+and return the times that this char
+without case sensetive
+repeat inside this string
+**hint: "str"[0] => "s"
+**hint: "car"[1] => "a"
+repeatChar("schOol","o") => 2
+repeatChar("school","a") => 0
+repeatChar("School","s") => 1
+try more case by yourself
+*/ -->
+    <script>
+      // repeatChar("school", "o");
+
+      // function repeatChar(a, b) {
+      //   let first = a;
+      //   let second = b;
+      //   let count = first.match(second);
+      //   console.log(first);
+      // }
+      function repeatChar(x = "", y = "") {
+        x = x.toLowerCase();
+        y = y.toLowerCase();
+        let counter = 0,
+          result = 0;
+        while (counter != x.length) {
+          if (x[counter] == y) {
+            result++;
+          }
+          counter++;
+        }
+        return result;
+      }
+    </script>
+  </body>
+</html>

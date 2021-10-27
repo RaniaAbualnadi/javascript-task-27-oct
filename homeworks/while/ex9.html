@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- /*
+9
+Write a function called countDown
+that takes one parameter
+and return a string represent the count down from the number
+that insert to 0
+instead of 0 you shoulf have "done"
+between each number a comma and space
+** you need to use recursion
+** Important: You should't have extra space at the end and comma
+countDown(5)
+=> "5, 4, 3, 2, 1, done"
+countDown(2)
+=> "2, 1, done"
+countDown(7)
+=> "7, 6, 5, 4, 3, 2, 1, done"
+*/ -->
+
+    <script>
+      countDown(6);
+
+      function countDown(a) {
+        let text = "done";
+
+        let result = a + 1;
+        while (a >= 1) {
+          result -= 1;
+          console.log(result);
+
+          let result2 = result + text;
+          a--;
+        }
+        console.log(text);
+      }
+    </script>
+  </body>
+</html>

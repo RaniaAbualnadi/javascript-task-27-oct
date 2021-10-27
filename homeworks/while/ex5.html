@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 5
+Create a function called repeatStr2
+that takes 2 string parameters,
+and return the first string number time
+(of the lenght of the secend string) with space betweeen it
+** Important: the continue condition should be [somthing!== 0]
+** Important: You should't have extra space at the end
+Ex: repeatStr2("ro","cc"); => "ro ro"
+Ex: repeatStr2("ro","fff"); => "ro ro ro"
+*/ -->
+
+    <script>
+      repeatStr2("ro", "ccccc");
+
+      function repeatStr2(str, numberOfstring) {
+        // while
+        let ind = 0;
+        let text = str;
+        while (ind < numberOfstring.length - 1) {
+          ind++;
+          text = text + " " + str;
+
+          console.log(text);
+        }
+      }
+    </script>
+  </body>
+</html>

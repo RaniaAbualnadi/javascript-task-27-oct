@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- /*
+    3
+    Create a function called repeatStr
+    that takes 2 parameters string and number,
+    and return the string number time with space
+    Important: the continue condition should be [somthing !== 0]
+    ** Think how we can return nothing ???
+    ** Important: You should dint have extra space at the end
+    Ex: repeatStr("to",2); => "to to"
+    Ex: repeatStr("to",4); => "to to to to"
+    */ -->
+    <!-- repeatStr("to", 2); function repeatStr(str, no) { let repeatStr = str; while
+    () { n--; result *= n; console.log(result); } } -->
+    <script>
+      repeatStr("to", 3);
+
+      function repeatStr(str, numberOfRepeat) {
+        // while
+        let ind = 0;
+        let text = str;
+        while (ind < numberOfRepeat - 1) {
+          ind++;
+          text = text + " " + str;
+
+          console.log(text);
+        }
+      }
+      ("to to to to");
+    </script>
+  </body>
+</html>
